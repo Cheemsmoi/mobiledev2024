@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weather_and_forecast"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherAndForecastFragment">
+
+    <!-- Weather Fragment -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:background="#FF90EE90">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/currentweather"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="30dp">
+            </TextView>
+
+            <ImageView
+                android:src="@drawable/sunny"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Paris"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="40dp">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- Forecast Fragment -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#FFD4EBF2"
+        android:orientation="vertical">
+
+        <!-- Monday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:text="@string/T2"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/sunny">
+            </ImageView>
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:text="30C - 33C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Tuesday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:text="@string/T3"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/rain">
+            </ImageView>
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:text="@string/temp1"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Wednesday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:text="@string/T4"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/sun_cloud">
+            </ImageView>
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:text="21C - 25C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Thursday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:text="@string/T5"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/storm">
+            </ImageView>
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:text="20C - 22C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Friday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:text="@string/T6"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/sun_cloud">
+            </ImageView>
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:text="5C - 7C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Saturday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:text="@string/T7"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/sun">
+            </ImageView>
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:text="14C - 18C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+
+        <!-- Sunday -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:text="@string/Cn"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/rain">
+            </ImageView>
+
+            <TextView
+                android:layout_width="@dimen/daystitle"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:text="20C - 23C"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

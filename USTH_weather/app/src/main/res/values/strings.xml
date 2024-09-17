@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" />
+    <string name="app_name" translatable="false">USTH Weather</string>
+    <string name="currentweather">31C \nSunny</string>
+   <!--days title-->
+    <string name="T2" translateable="true">Monday</string>
+    <string name="T3">Tuesday</string>
+    <string name="T4">Wednesday</string>
+    <string name="T5">Thursday</string>
+    <string name="T6">Friday</string>
+    <string name="T7">Saturday</string>
+    <string name="Cn">Sunday</string>
+
+    <!--tempature title-->
+    <string name="temp1" translatable="false">26C - 28C</string>
+
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 </resources>
